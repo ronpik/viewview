@@ -434,6 +434,8 @@ class MainActivity : AppCompatActivity() {
             horizontalFoV = hFoV
             verticalFoV = vFoV
 
+            //comment
+
             // Add code to check camera hardware level and capabilities if needed
             manager.openCamera(cameraId, stateCallback, null)
         } catch (e: CameraAccessException) {
