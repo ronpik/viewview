@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextureView
+        android:id="@+id/textureView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.ar.sceneform.ArSceneView
+        android:id="@+id/arSceneView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <TextView
+        android:id="@+id/tvCoordLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Long: "
+        android:textColor="#FFF"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvCoordLat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCoordLong"
+        android:text="Lat: "
+        android:textColor="#FFF"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvCoordAlt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCoordLat"
+        android:text="Altitude: "
+        android:textColor="#FFF"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvAzimuth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCoordAlt"
+        android:text="Azimuth: "
+        android:textColor="#FFF"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvPitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvAzimuth"
+        android:text="Pitch: "
+        android:textColor="#FFF"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvPitch"
+        android:text="Roll: "
+        android:textColor="#FFF"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvHFoV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvRoll"
+        android:text="hFoV: "
+        android:textColor="#FFF"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tvVFoV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHFoV"
+        android:text="vFoV: "
+        android:textColor="#FFF"
+        android:textSize="14sp"/>
+
+    <org.osmdroid.views.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <Button
+        android:id="@+id/btnSwitchView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dp"
+        android:text="Switch View" />
+
+</RelativeLayout>
